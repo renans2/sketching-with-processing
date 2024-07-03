@@ -25,10 +25,9 @@ public class Sketch extends PApplet {
     }
 
     public void draw() {
-        if(frameCount % 7 == 0) {
+        if(frameCount % 7 == 0)
             fireworks.add(new Firework(this, random(WIDTH), random(HEIGHT)));
-            System.out.println(fireworks.size());
-        }
+
         fill(0, 5);
         rect(0, 0, WIDTH, HEIGHT);
 
@@ -43,7 +42,6 @@ public class Sketch extends PApplet {
 
     public void mousePressed() {
         fireworks.add(new Firework(this, mouseX, mouseY));
-//        System.out.println(frameRate);
     }
 
     public void keyPressed() {
