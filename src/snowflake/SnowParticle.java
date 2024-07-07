@@ -6,15 +6,17 @@ import processing.core.PVector;
 import java.util.List;
 
 public class SnowParticle {
-    public static final int DIAMETER = 5;
+    public static final int DIAMETER = 4;
     private final PApplet p;
-    private final PVector pos;
+    private final PVector startingPos;
+    private PVector pos;
     private final float xSpeed;
     private final float yOffset;
     private boolean isFrozen = false;
 
     public SnowParticle(PApplet parent, float x, float y, float yOffset, float xSpeed){
         p = parent;
+        startingPos = new PVector(x, y);
         pos = new PVector(x, y);
         this.yOffset = yOffset;
         this.xSpeed = xSpeed;
@@ -23,8 +25,12 @@ public class SnowParticle {
     public void update(){
         move();
 
-        if(pos.x < 0)
-            isFrozen = true;
+        if(pos.x < 0){
+            if(pos.y < Snowflake.WIDTH_HEIGHT/5 && -Snowflake.WIDTH_HEIGHT/5 < pos.y)
+                isFrozen = true;
+            else
+                pos = startingPos.copy();
+        }
     }
 
     public void checkIfCollides(List<SnowParticle> particles){
@@ -48,8 +54,6 @@ public class SnowParticle {
     }
 
     public void draw(){
-        float hue = PApplet.map(pos.x, 0, Snowflake.MAX_RADIUS, 150, 250);
-        p.fill(hue, 100, 100, 100);
         p.circle(pos.x, pos.y, DIAMETER);
     }
 
