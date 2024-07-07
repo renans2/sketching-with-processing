@@ -69,9 +69,9 @@ public class Snowflake extends PApplet {
         System.out.println(frameRate + " " + particles.size());
     }
 
-    public void keyPressed() {
-        if (key == 'c' || key == 'C') {
-            saveFrame("/home/renan/Pictures/processing-captures/snowflake/snowflake-###.png");
-        }
-    }
+//    public void keyPressed() {
+//        if (key == 'c' || key == 'C') {
+//            saveFrame("/home/renan/Pictures/processing-captures/snowflake/snowflake-###.png");
+//        }
+//    }
 }
