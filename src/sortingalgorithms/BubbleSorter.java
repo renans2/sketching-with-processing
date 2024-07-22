@@ -16,42 +16,40 @@ public class BubbleSorter implements Sorter {
     @Override
     public void sortFrame() {
         // One frame = Next element in the correct spot
-        while(b+1 < a){
-            if(arrayToSort[b] > arrayToSort[b+1]) {
-                int temp = arrayToSort[b+1];
-                arrayToSort[b+1] = arrayToSort[b];
-                arrayToSort[b] = temp;
-            }
-            b++;
-        }
-        a--;
-        b = 0;
-        if(a == 0) {
-            sorted = true;
-            b = -1;
-            a = -1;
-        }
+//        while(b+1 < a){
+//            if(arrayToSort[b] > arrayToSort[b+1]) {
+//                int temp = arrayToSort[b+1];
+//                arrayToSort[b+1] = arrayToSort[b];
+//                arrayToSort[b] = temp;
+//            }
+//            b++;
+//        }
+//        a--;
+//        b = 0;
+//        if(a == 0) {
+//            sorted = true;
+//            b = -1;
+//            a = -1;
+//        }
 
 
         // One frame == One movement
-//        if(b+1 == a){
-//            a--;
-//            b = 0;
-//            if(a == 0) {
-//                sorted = true;
-//                b = -1;
-//                a = -1;
-//            }
-//        } else if(arrayToSort[b] > arrayToSort[b+1]) {
-//            int temp = arrayToSort[b+1];
-//            arrayToSort[b+1] = arrayToSort[b];
-//            arrayToSort[b] = temp;
-//            b++;
-//        } else if(arrayToSort[b] < arrayToSort[b+1]) {
-//            while(arrayToSort[b] < arrayToSort[b+1] && b+1 < a){
-//                b++;
-//            }
-//        }
+        if(b+1 == a){
+            a--;
+            b = 0;
+            if(a == 0) {
+                sorted = true;
+                b = -1;
+                a = -1;
+            }
+        } else if(arrayToSort[b] > arrayToSort[b+1]) {
+            int temp = arrayToSort[b+1];
+            arrayToSort[b+1] = arrayToSort[b];
+            arrayToSort[b] = temp;
+            b++;
+        } else if(arrayToSort[b] < arrayToSort[b+1]) {
+            b++;
+        }
     }
 
     @Override

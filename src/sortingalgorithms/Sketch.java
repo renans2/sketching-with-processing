@@ -6,14 +6,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sketch extends PApplet {
-    private static final int WIDTH = 1500;
+    private static final int WIDTH = 800;
     private static final int HEIGHT = 800;
-    private static final int AMOUNT = 1000;
+    private static final int AMOUNT = 75;
     private static final float X_OFFSET = (float)WIDTH/AMOUNT;
     private static final float Y_OFFSET = (float)HEIGHT/AMOUNT;
     private int[] array = new int[AMOUNT];
     private Sorter insertionSort;
     private Sorter bubbleSorter;
+    private Sorter selectionSorter;
 
     public static void main(String[] args) {
         PApplet.main("sortingalgorithms.Sketch");
@@ -26,11 +27,11 @@ public class Sketch extends PApplet {
     public void setup() {
         background(0);
         fill(255);
-        frameRate(60);
 
         array = getShuffledArray(array.length);
         insertionSort = new InsertionSorter(array);
         bubbleSorter = new BubbleSorter(array);
+        selectionSorter = new SelectionSorter(array);
     }
 
     public void draw() {
@@ -45,13 +46,17 @@ public class Sketch extends PApplet {
             else
                 fill(255);
 
-            float h = elem * Y_OFFSET/2;
-            rect(i * X_OFFSET, height - h, X_OFFSET, h);
+            float h = elem * Y_OFFSET/3;
+            rect(i * X_OFFSET, (float)height/3 - h, X_OFFSET, h);
             i++;
         }
 
         if(!insertionSort.isSorted())
             insertionSort.sortFrame();
+
+
+
+
 
         i = 0;
         for (int elem : bubbleSorter.getCurrentArray()) {
@@ -62,16 +67,34 @@ public class Sketch extends PApplet {
             else
                 fill(255);
 
-            float h = elem * Y_OFFSET/2;
-            rect(i * X_OFFSET, (float)height/2 - h, X_OFFSET, h);
+            float h = elem * Y_OFFSET/3;
+            rect(i * X_OFFSET, (float)height * 2f/3 - h, X_OFFSET, h);
             i++;
         }
 
         if(!bubbleSorter.isSorted())
             bubbleSorter.sortFrame();
 
-        if(frameCount % 60 == 0)
-            System.out.println(frameRate);
+
+
+
+
+        i = 0;
+        for (int elem : selectionSorter.getCurrentArray()) {
+            if(i == selectionSorter.getCurrentIndex())
+                fill(0,255,0);
+            else if(i == selectionSorter.getBorderIndex())
+                fill(255,0,0);
+            else
+                fill(255);
+
+            float h = elem * Y_OFFSET/3;
+            rect(i * X_OFFSET, height - h, X_OFFSET, h);
+            i++;
+        }
+
+        if(!selectionSorter.isSorted())
+            selectionSorter.sortFrame();
     }
 
     private int[] getShuffledArray(int length) {

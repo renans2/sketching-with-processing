@@ -15,30 +15,30 @@ public class InsertionSorter implements Sorter{
     @Override
     public void sortFrame() {
         // One frame = Next element in the correct spot
-        while(b-1 >= 0 && arrayToSort[b-1] > arrayToSort[b]) {
-            int temp = arrayToSort[b - 1];
-            arrayToSort[b-1] = arrayToSort[b];
-            arrayToSort[b] = temp;
-            b--;
-        }
-        a++;
-        b = a;
-        if(a >= arrayToSort.length)
-            sorted = true;
-
-
-        // One frame = One movement
-//        if(b-1 < 0 || arrayToSort[b-1] < arrayToSort[b]){
-//            a++;
-//            b = a;
-//            if(a >= arrayToSort.length)
-//                sorted = true;
-//        } else if(arrayToSort[b-1] > arrayToSort[b]) {
+//        while(b-1 >= 0 && arrayToSort[b-1] > arrayToSort[b]) {
 //            int temp = arrayToSort[b - 1];
 //            arrayToSort[b-1] = arrayToSort[b];
 //            arrayToSort[b] = temp;
 //            b--;
 //        }
+//        a++;
+//        b = a;
+//        if(a >= arrayToSort.length)
+//            sorted = true;
+
+
+        // One frame = One movement
+        if(b-1 < 0 || arrayToSort[b-1] < arrayToSort[b]){
+            a++;
+            b = a;
+            if(a >= arrayToSort.length)
+                sorted = true;
+        } else if(arrayToSort[b-1] > arrayToSort[b]) {
+            int temp = arrayToSort[b - 1];
+            arrayToSort[b-1] = arrayToSort[b];
+            arrayToSort[b] = temp;
+            b--;
+        }
     }
 
     @Override
