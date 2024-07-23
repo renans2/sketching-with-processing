@@ -29,24 +29,24 @@ public class FractalCircles extends PApplet {
         angle = (angle + ANGLE_INC) % TWO_PI;
         rotate(angle);
 
-        drawFracCircles(0, 0, FIRST_CIRCLE_DIAMETER, DEPTH, 40, angle);
+        drawFracCircles(FIRST_CIRCLE_DIAMETER, DEPTH, 40, angle);
     }
 
-    private void drawFracCircles(float x, float y, float diameter, int depth, float alpha, float angle) {
+    private void drawFracCircles(float diameter, int depth, float alpha, float angle) {
         if(depth > 0) {
             fill(0, alpha);
-            circle(x, y, diameter);
+            circle(0, 0, diameter);
 
             push();
             translate(-diameter/4, 0);
             rotate(angle*2f);
-            drawFracCircles(x, y, diameter/2, depth - 1, 1.2f * alpha, -angle*2f);
+            drawFracCircles(diameter/2, depth - 1, 1.2f * alpha, -angle*2f);
             pop();
 
             push();
             translate(diameter/4, 0);
             rotate(angle*2f);
-            drawFracCircles(x, y, diameter/2, depth - 1, 1.2f * alpha, -angle*2f);
+            drawFracCircles(diameter/2, depth - 1, 1.2f * alpha, -angle*2f);
             pop();
         }
     }
