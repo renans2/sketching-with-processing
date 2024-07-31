@@ -1,4 +1,4 @@
-package fractalcircles;
+package fractals;
 
 import processing.core.PApplet;
 
@@ -14,7 +14,7 @@ public class FractalCircles extends PApplet {
     private float angle = 0;
 
     public static void main(String[] args) {
-        PApplet.main("fractalcircles.FractalCircles");
+        PApplet.main("fractals.FractalCircles");
     }
 
     public void settings() {

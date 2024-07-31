@@ -1,4 +1,4 @@
-package fractaltetracircles;
+package fractals;
 
 import processing.core.PApplet;
 
@@ -13,7 +13,7 @@ public class FractalTetraCircles extends PApplet {
     private static final float RADIUS_MULTIPLIER = .5f;
 
     public static void main(String[] args) {
-        PApplet.main("fractaltetracircles.FractalTetraCircles");
+        PApplet.main("fractals.FractalTetraCircles");
     }
 
     public void settings() {

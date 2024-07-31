@@ -1,4 +1,4 @@
-package animatedfractaltree;
+package fractals;
 
 import processing.core.PApplet;
 
@@ -15,7 +15,7 @@ public class AnimatedFractalTree extends PApplet {
     private static final float NOISE_SCALE = 0.005f;
 
     public static void main(String[] args) {
-        PApplet.main("animatedfractaltree.AnimatedFractalTree");
+        PApplet.main("fractals.AnimatedFractalTree");
     }
 
     public void settings() {

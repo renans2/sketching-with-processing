@@ -1,11 +1,11 @@
-package fractalsquares;
+package fractals;
 
 import processing.core.PApplet;
 
 /**
  * @author Renan Silva -> @renans2 on github
  */
-public class FractalSquares extends PApplet {
+public class SierpinskiCarpet extends PApplet {
     private static final int WIDTH = 800;
     private static final int HEIGHT = 800;
     private static final int MAX_DEPTH = 7;
@@ -13,7 +13,7 @@ public class FractalSquares extends PApplet {
     private int currentMaxDepth = 0;
 
     public static void main(String[] args) {
-        PApplet.main("fractalsquares.FractalSquares");
+        PApplet.main("fractals.SierpinskiCarpet");
     }
 
     public void settings() {

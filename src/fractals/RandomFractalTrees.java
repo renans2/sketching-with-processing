@@ -1,4 +1,4 @@
-package randomfractaltrees;
+package fractals;
 
 import processing.core.PApplet;
 
@@ -13,7 +13,7 @@ public class RandomFractalTrees extends PApplet {
     private static final int MAX_BRANCHES = 7;
 
     public static void main(String[] args) {
-        PApplet.main("randomfractaltrees.RandomFractalTrees");
+        PApplet.main("fractals.RandomFractalTrees");
     }
 
     public void settings() {

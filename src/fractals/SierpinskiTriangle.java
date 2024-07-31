@@ -1,18 +1,18 @@
-package fractaltriangles;
+package fractals;
 
 import processing.core.PApplet;
 
 /**
  * @author Renan Silva -> @renans2 on github
  */
-public class FractalTriangles extends PApplet {
+public class SierpinskiTriangle extends PApplet {
     private static final int WIDTH = 800;
     private static final int HEIGHT = 800;
     private static final int MAX_DEPTH = 8;
     private static final float STARTING_SIZE = 400;
 
     public static void main(String[] args) {
-        PApplet.main("fractaltriangles.FractalTriangles");
+        PApplet.main("fractals.SierpinskiTriangle");
     }
 
     public void settings() {
