@@ -3,6 +3,9 @@ package ponggame;
 import processing.core.PApplet;
 import processing.core.PVector;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Ball {
     private final PApplet p;
     private final float diameter;

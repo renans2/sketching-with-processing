@@ -2,6 +2,9 @@ package animatedfractaltree;
 
 import processing.core.PApplet;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class AnimatedFractalTree extends PApplet {
     private static final float WIDTH = 1200;
     private static final float HEIGHT = 800;

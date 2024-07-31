@@ -6,6 +6,9 @@ import processing.core.PVector;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Firework {
     private static final int MIN_SPARKS = 20;
     private static final int MAX_SPARKS = 30;

@@ -3,6 +3,9 @@ package kaleidoscopefractaltrees;
 import processing.core.PApplet;
 import processing.event.MouseEvent;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class KaleidoscopeFractalTrees extends PApplet {
     private static final float WIDTH = 800;
     private static final float HEIGHT = 800;

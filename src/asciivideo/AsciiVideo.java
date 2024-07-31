@@ -3,6 +3,9 @@ package asciivideo;
 import processing.core.PApplet;
 import processing.video.Movie;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class AsciiVideo extends PApplet {
     private static final int WIDTH = 480;
     private static final int HEIGHT = 854;

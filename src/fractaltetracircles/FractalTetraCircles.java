@@ -2,6 +2,9 @@ package fractaltetracircles;
 
 import processing.core.PApplet;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class FractalTetraCircles extends PApplet {
     private static final int WIDTH = 800;
     private static final int HEIGHT = 800;

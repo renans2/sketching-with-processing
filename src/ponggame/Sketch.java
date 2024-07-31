@@ -3,6 +3,9 @@ package ponggame;
 import processing.core.PApplet;
 import processing.event.KeyEvent;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Sketch extends PApplet {
     private static final int WIDTH = 800;
     private static final int HEIGHT = 800;

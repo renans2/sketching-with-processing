@@ -2,6 +2,9 @@ package matrixdigitalrain1;
 
 import processing.core.PApplet;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class MatrixDigitalRain extends PApplet {
     public static final String CHARACTERS = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     private static final int FONT_SIZE = 20;

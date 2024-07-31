@@ -3,6 +3,9 @@ package fireworks;
 import processing.core.PApplet;
 import processing.core.PVector;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Spark {
     private static final float MIN_DIAMETER = 2;
     private static final float MAX_DIAMETER = 3;

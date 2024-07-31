@@ -3,6 +3,9 @@ package matrixdigitalrain1;
 import processing.core.PApplet;
 import processing.core.PVector;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Section {
     private final PApplet parent;
     private final PVector pos;

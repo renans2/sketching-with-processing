@@ -6,6 +6,9 @@ import processing.core.PVector;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Kaleidoscope extends PApplet {
     private static final float WIDTH = 800;
     private static final float HEIGHT = 800;

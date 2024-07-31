@@ -5,6 +5,9 @@ import processing.core.PVector;
 
 import java.util.List;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Particle {
     private final PApplet p;
     private final PVector pos;

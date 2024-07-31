@@ -6,6 +6,9 @@ import processing.core.PVector;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Board {
     private final PApplet p;
     private final int nHorizontalCells;

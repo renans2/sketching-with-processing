@@ -3,6 +3,9 @@ package matrixdigitalrain2;
 import processing.core.PApplet;
 import processing.core.PVector;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Cell {
     private static final String CHARACTERS = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     private final PApplet p;

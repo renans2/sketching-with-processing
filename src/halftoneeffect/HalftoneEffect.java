@@ -3,6 +3,9 @@ package halftoneeffect;
 import processing.core.PApplet;
 import processing.core.PImage;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class HalftoneEffect extends PApplet {
     private PImage img;
     private static final int WIDTH = 800;

@@ -2,6 +2,9 @@ package ponggame;
 
 import processing.core.PApplet;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class PongGame {
     private final PApplet p;
     private final Paddle paddle1;

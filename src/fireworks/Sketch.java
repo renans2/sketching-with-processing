@@ -5,6 +5,9 @@ import processing.core.PApplet;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Sketch extends PApplet {
     private static final float WIDTH = 1000;
     private static final float HEIGHT = 800;

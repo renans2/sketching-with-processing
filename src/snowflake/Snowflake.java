@@ -5,6 +5,9 @@ import processing.core.PApplet;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Snowflake extends PApplet {
     public static final float WIDTH_HEIGHT = 800;
     public static final float MAX_RADIUS = 0.5f * WIDTH_HEIGHT;

@@ -3,6 +3,9 @@ package flowfield;
 import processing.core.PApplet;
 import processing.core.PVector;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Particle {
     private final PApplet p;
     private PVector pos;

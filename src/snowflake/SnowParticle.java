@@ -5,6 +5,9 @@ import processing.core.PVector;
 
 import java.util.List;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class SnowParticle {
     public static final int DIAMETER = 4;
     private final PApplet p;

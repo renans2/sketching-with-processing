@@ -5,6 +5,9 @@ import processing.core.PApplet;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class BrownianTree extends PApplet {
     public static final float WIDTH = 800;
     public static final float HEIGHT = 800;

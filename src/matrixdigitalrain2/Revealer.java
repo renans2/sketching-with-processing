@@ -5,6 +5,9 @@ import processing.core.PApplet;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Revealer {
     private static final int MAX_DELAY = 200;
     private static final int MIN_DELAY = 20;

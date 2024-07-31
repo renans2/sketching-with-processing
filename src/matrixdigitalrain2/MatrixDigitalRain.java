@@ -2,6 +2,9 @@ package matrixdigitalrain2;
 
 import processing.core.PApplet;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class MatrixDigitalRain extends PApplet {
     private static final int FONT_SIZE = 20;
     private static final float WIDTH = 1200;

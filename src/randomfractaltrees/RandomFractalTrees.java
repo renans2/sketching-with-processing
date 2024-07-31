@@ -2,6 +2,9 @@ package randomfractaltrees;
 
 import processing.core.PApplet;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class RandomFractalTrees extends PApplet {
     private static final float WIDTH = 800;
     private static final float HEIGHT = 800;

@@ -5,6 +5,9 @@ import processing.core.PApplet;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class Sketch extends PApplet {
     public static final int WIDTH = 800;
     public static final int HEIGHT = 800;

@@ -2,6 +2,9 @@ package sortingalgorithms;
 
 import java.util.Arrays;
 
+/**
+ * @author Renan Silva -> @renans2 on github
+ */
 public class InsertionSorter implements Sorter{
     private int[] arrayToSort;
     private int a = 0;
